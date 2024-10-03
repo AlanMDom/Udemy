@@ -1,0 +1,15 @@
+<div class="contenedor-busqueda">
+<ion-card style="width: 245px; height: auto;" class="colorback" *ngFor="let curso of cursos">
+  <a href="{{ curso.componente }}" style="text-decoration: none;"> 
+    <img alt="Silhouette of mountains" src="{{ curso.imagen }}" />
+    <ion-card-header>
+      <ion-card-title style="color: black; font-size: 17px;"> {{ curso.titulo }} </ion-card-title>
+      <ion-card-subtitle style="font-size: 12px;"> {{ curso.subtitulo }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ curso.descripcion }}
+    </ion-card-content>
+  </a>
+  </ion-card>
+</div>
